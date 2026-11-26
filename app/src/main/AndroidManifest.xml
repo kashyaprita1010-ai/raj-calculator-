@@ -3,6 +3,7 @@
 
     <application
         android:label="Raj ka Calculator"
+        android:icon="@drawable/icon"
         android:theme="@android:style/Theme.Material.NoActionBar">
         <activity
             android:name=".MainActivity"
