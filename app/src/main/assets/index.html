@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raj ka Calculator</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #41295a, #2f0743);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+h1 {
+  color: white;
+  font-size: 34px;
+}
+h2 {
+  color: white;
+}
+p {
+  color: white;
+  font-size: 18px;
+}
+ul {
+  color: white;
+  font-size: 24px;
+  list-style: none;
+  padding: 0;
+}
+input {
+  font-size: 44px;
+  width: 92%;
+  max-width: 360px;
+  height: 80px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px black;
+}
+button {
+  background-color: #ffcc00;
+  color: black;
+  font-size: 34px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  margin: 4px 2px;
+  width: 21%;
+  max-width: 84px;
+  height: 64px;
+  box-shadow: 0 4px 0 #997a00;
+}
+button:active {
+  transform: scale(0.93);
+}
+</style>
+</head>
+<body>
+<h1>Raj ka Calculator</h1>
+<input id="screen" readonly>
+<br>
+<button onclick="dabao('7')">7</button>
+<button onclick="dabao('8')">8</button>
+<button onclick="dabao('9')">9</button>
+<button onclick="dabao('*')">x</button>
+<br>
+<button onclick="dabao('4')">4</button>
+<button onclick="dabao('5')">5</button>
+<button onclick="dabao('6')">6</button>
+<button onclick="dabao('/')">÷</button>
+<br>
+<button onclick="dabao('1')">1</button>
+<button onclick="dabao('2')">2</button>
+<button onclick="dabao('3')">3</button>
+<button onclick="dabao('-')">-</button>
+<br>
+<button onclick="dabao('0')">0</button>
+<button onclick="saaf()">C</button>
+<button onclick="jawab()">=</button>
+<button onclick="dabao('+')">+</button>
+
+<h2>Pichhle Hisab</h2>
+<ul id="history"></ul>
+
+<h2>Ye kaise kaam karta hai?</h2>
+<p>HTML = dhacha (screen aur button)</p>
+<p>CSS = sajawat (peele button, rang)</p>
+<p>JavaScript = dimaag (hisaab, list, galti
