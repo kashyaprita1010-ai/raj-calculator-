@@ -92,4 +92,29 @@ button:active {
 <h2>Ye kaise kaam karta hai?</h2>
 <p>HTML = dhacha (screen aur button)</p>
 <p>CSS = sajawat (peele button, rang)</p>
-<p>JavaScript = dimaag (hisaab, list, galti
+<p>JavaScript = dimaag (hisaab, list, galti pakadna)</p>
+
+<script>
+let screen = document.getElementById("screen");
+function dabao(x) {
+  screen.value = screen.value + x;
+}
+function saaf() {
+  screen.value = "";
+}
+function jawab() {
+  let purana = screen.value;
+  if (purana.includes("/0")) {
+    screen.value = "Galti! 0 se bhaag nahi hota";
+    return;
+  }
+  let ans = eval(purana);
+  screen.value = ans;
+  let list = document.getElementById("history");
+  let item = document.createElement("li");
+  item.textContent = purana + " = " + ans;
+  list.appendChild(item);
+}
+</script>
+</body>
+</html>
